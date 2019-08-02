@@ -1,0 +1,846 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "asyncLoadAssets": false,
+    "readonly": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "FxRedBalloonExplosion",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 42
+      }
+    ],
+    "_active": true,
+    "_level": 1,
+    "_components": [
+      {
+        "__id__": 70
+      }
+    ],
+    "_prefab": {
+      "__id__": 71
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_zIndex": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Particles",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 3
+      }
+    ],
+    "_prefab": {
+      "__id__": 41
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 5,
+      "y": 5,
+      "z": 1
+    },
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_zIndex": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "15c84j3SexOC5NB/c8LV6EB",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "editingExtension": 80,
+    "life": {
+      "__id__": 4
+    },
+    "render": {
+      "__id__": 8
+    },
+    "emission": {
+      "__id__": 10
+    },
+    "trail": {
+      "__id__": 12
+    },
+    "shape": {
+      "__id__": 13
+    },
+    "velocity": {
+      "__id__": 15
+    },
+    "rotation": {
+      "__id__": 32
+    },
+    "size": {
+      "__id__": 33
+    },
+    "opacity": {
+      "__id__": 39
+    },
+    "color": {
+      "__id__": 40
+    },
+    "file": null,
+    "_N$editingType": 5,
+    "_id": ""
+  },
+  {
+    "__type__": "ParticleLife",
+    "isPlayOnLoad": false,
+    "timeScale": 1,
+    "duration": 1,
+    "isLoop": false,
+    "isPrewarm": false,
+    "delay": {
+      "__id__": 5
+    },
+    "lifetime": {
+      "__id__": 6
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 0
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 10,
+    "value": {
+      "__id__": 7
+    }
+  },
+  {
+    "__type__": "MinMaxValueHelper",
+    "min": 0.1,
+    "max": 0.2
+  },
+  {
+    "__type__": "ParticleRender",
+    "maxParticles": 20,
+    "parent": {
+      "__id__": 1
+    },
+    "_renderType": 0,
+    "render": {
+      "__id__": 9
+    }
+  },
+  {
+    "__type__": "SpriteRenderHelper",
+    "blend": 0,
+    "spriteFrames": [
+      {
+        "__uuid__": "dd555572-be6f-4e93-a37e-2ce8bfb2a835"
+      }
+    ]
+  },
+  {
+    "__type__": "ParticleEmission",
+    "_isActive": true,
+    "bursts": [
+      {
+        "__id__": 11
+      }
+    ],
+    "_N$rateOverTime": 0
+  },
+  {
+    "__type__": "Burst",
+    "delay": 0,
+    "count": 5,
+    "cycles": 1,
+    "interval": 0.01
+  },
+  {
+    "__type__": "ParticleTrail",
+    "_isActive": false,
+    "_trailType": 0,
+    "trail": null
+  },
+  {
+    "__type__": "ParticleShape",
+    "shape": {
+      "__id__": 14
+    },
+    "_isActive": false,
+    "_shapeType": 0
+  },
+  {
+    "__type__": "ShapeHelper",
+    "position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ParticleVelocity",
+    "_isActive": true,
+    "_isSeparateAxis": true,
+    "_velocityType": 10,
+    "velocity": {
+      "__id__": 16
+    },
+    "separateVelocity": {
+      "__id__": 23
+    }
+  },
+  {
+    "__type__": "ParticleAngleVelocityHelper",
+    "angle": {
+      "__id__": 17
+    },
+    "velocity": {
+      "__id__": 20
+    }
+  },
+  {
+    "__type__": "ParticleData",
+    "EDITING": true,
+    "initialValue": {
+      "__id__": 18
+    },
+    "control": {
+      "__id__": 19
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 1
+  },
+  {
+    "__type__": "ParticleCurve",
+    "_curveType": 0,
+    "value": null,
+    "curve": null
+  },
+  {
+    "__type__": "ParticleData",
+    "EDITING": true,
+    "initialValue": {
+      "__id__": 21
+    },
+    "control": {
+      "__id__": 22
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 100
+  },
+  {
+    "__type__": "ParticleCurve",
+    "_curveType": 0,
+    "value": null,
+    "curve": null
+  },
+  {
+    "__type__": "ParticleSeparateVelocityHelper",
+    "velocityX": {
+      "__id__": 24
+    },
+    "velocityY": {
+      "__id__": 28
+    }
+  },
+  {
+    "__type__": "ParticleData",
+    "EDITING": true,
+    "initialValue": {
+      "__id__": 25
+    },
+    "control": {
+      "__id__": 27
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 10,
+    "value": {
+      "__id__": 26
+    }
+  },
+  {
+    "__type__": "MinMaxValueHelper",
+    "min": -700,
+    "max": 700
+  },
+  {
+    "__type__": "ParticleCurve",
+    "_curveType": 0,
+    "value": null,
+    "curve": null
+  },
+  {
+    "__type__": "ParticleData",
+    "EDITING": true,
+    "initialValue": {
+      "__id__": 29
+    },
+    "control": {
+      "__id__": 31
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 10,
+    "value": {
+      "__id__": 30
+    }
+  },
+  {
+    "__type__": "MinMaxValueHelper",
+    "min": -1000,
+    "max": -700
+  },
+  {
+    "__type__": "ParticleCurve",
+    "_curveType": 0,
+    "value": null,
+    "curve": null
+  },
+  {
+    "__type__": "ParticleRotation",
+    "_isActive": false,
+    "_isFollowMovement": false,
+    "rotation": null
+  },
+  {
+    "__type__": "ParticleSize",
+    "_isActive": true,
+    "_isSeparateAxis": false,
+    "size": {
+      "__id__": 34
+    }
+  },
+  {
+    "__type__": "ParticleData",
+    "EDITING": true,
+    "initialValue": {
+      "__id__": 35
+    },
+    "control": {
+      "__id__": 36
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 0
+  },
+  {
+    "__type__": "ParticleCurve",
+    "_curveType": 30,
+    "value": {
+      "__id__": 37
+    },
+    "curve": {
+      "__id__": 38
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 1
+  },
+  {
+    "__type__": "ArrayParticleCurveHelper",
+    "control": [
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0.2
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 1,
+        "y": 0.05
+      }
+    ]
+  },
+  {
+    "__type__": "ParticleOpacity",
+    "_isActive": false,
+    "opacity": null
+  },
+  {
+    "__type__": "ParticleColor",
+    "_isActive": false,
+    "_colorType": 0,
+    "color": null
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "e05pAr/tNI6L6gd0fDJP8g",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Explosion",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 43
+      }
+    ],
+    "_prefab": {
+      "__id__": 69
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_zIndex": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "15c84j3SexOC5NB/c8LV6EB",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 42
+    },
+    "_enabled": true,
+    "editingExtension": 80,
+    "life": {
+      "__id__": 44
+    },
+    "render": {
+      "__id__": 47
+    },
+    "emission": {
+      "__id__": 49
+    },
+    "trail": {
+      "__id__": 51
+    },
+    "shape": {
+      "__id__": 52
+    },
+    "velocity": {
+      "__id__": 54
+    },
+    "rotation": {
+      "__id__": 55
+    },
+    "size": {
+      "__id__": 56
+    },
+    "opacity": {
+      "__id__": 62
+    },
+    "color": {
+      "__id__": 68
+    },
+    "file": null,
+    "_N$editingType": 5,
+    "_id": ""
+  },
+  {
+    "__type__": "ParticleLife",
+    "isPlayOnLoad": false,
+    "timeScale": 1,
+    "duration": 1,
+    "isLoop": false,
+    "isPrewarm": false,
+    "delay": {
+      "__id__": 45
+    },
+    "lifetime": {
+      "__id__": 46
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 0
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 0.3
+  },
+  {
+    "__type__": "ParticleRender",
+    "maxParticles": 20,
+    "parent": {
+      "__id__": 42
+    },
+    "_renderType": 0,
+    "render": {
+      "__id__": 48
+    }
+  },
+  {
+    "__type__": "SpriteRenderHelper",
+    "blend": 0,
+    "spriteFrames": [
+      {
+        "__uuid__": "9c8a6887-3b73-442c-96a9-9c363329ba90"
+      }
+    ]
+  },
+  {
+    "__type__": "ParticleEmission",
+    "_isActive": true,
+    "bursts": [
+      {
+        "__id__": 50
+      }
+    ],
+    "_N$rateOverTime": 0
+  },
+  {
+    "__type__": "Burst",
+    "delay": 0,
+    "count": 1,
+    "cycles": 1,
+    "interval": 0.01
+  },
+  {
+    "__type__": "ParticleTrail",
+    "_isActive": false,
+    "_trailType": 0,
+    "trail": null
+  },
+  {
+    "__type__": "ParticleShape",
+    "shape": {
+      "__id__": 53
+    },
+    "_isActive": false,
+    "_shapeType": 0
+  },
+  {
+    "__type__": "ShapeHelper",
+    "position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ParticleVelocity",
+    "_isActive": false,
+    "_isSeparateAxis": false,
+    "_velocityType": 0,
+    "velocity": null,
+    "separateVelocity": null
+  },
+  {
+    "__type__": "ParticleRotation",
+    "_isActive": false,
+    "_isFollowMovement": false,
+    "rotation": null
+  },
+  {
+    "__type__": "ParticleSize",
+    "_isActive": true,
+    "_isSeparateAxis": false,
+    "size": {
+      "__id__": 57
+    }
+  },
+  {
+    "__type__": "ParticleData",
+    "EDITING": true,
+    "initialValue": {
+      "__id__": 58
+    },
+    "control": {
+      "__id__": 59
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 0
+  },
+  {
+    "__type__": "ParticleCurve",
+    "_curveType": 30,
+    "value": {
+      "__id__": 60
+    },
+    "curve": {
+      "__id__": 61
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 1
+  },
+  {
+    "__type__": "ArrayParticleCurveHelper",
+    "control": [
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0.3,
+        "y": 0.4
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 1,
+        "y": 0.4
+      }
+    ]
+  },
+  {
+    "__type__": "ParticleOpacity",
+    "_isActive": true,
+    "opacity": {
+      "__id__": 63
+    }
+  },
+  {
+    "__type__": "ParticleData",
+    "EDITING": true,
+    "initialValue": {
+      "__id__": 64
+    },
+    "control": {
+      "__id__": 65
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 0
+  },
+  {
+    "__type__": "ParticleCurve",
+    "_curveType": 30,
+    "value": {
+      "__id__": 66
+    },
+    "curve": {
+      "__id__": 67
+    }
+  },
+  {
+    "__type__": "ParticleValue",
+    "_valueType": 0,
+    "value": 255
+  },
+  {
+    "__type__": "ArrayParticleCurveHelper",
+    "control": [
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0.7,
+        "y": 1
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "__type__": "ParticleColor",
+    "_isActive": false,
+    "_colorType": 0,
+    "color": null
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "dc30S1IUxPI59sx/fSqYxp",
+    "sync": false
+  },
+  {
+    "__type__": "371bbFLiqtGSLU+QYFIAyh7",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "playOnLoad": false,
+    "_timeScale": 1,
+    "emitters": [],
+    "_isAlive": false,
+    "_lifeTime": 0,
+    "_duration": 1,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "e2RgY9ul5I/6HVPD7xuzNp",
+    "sync": false
+  }
+]
